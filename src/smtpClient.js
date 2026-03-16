@@ -16,7 +16,7 @@ function checkMailbox(mxHost, email, timeoutMs = 10000) {
       resolve(value);
     }
 
-    const socket = net.createConnection({ host: mxHost, port: 25 });
+    const socket = net.createConnection({ host: mxHost, port: 2525 });
     socket.setTimeout(timeoutMs);
     socket.setEncoding("utf8");
 
